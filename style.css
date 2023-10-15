@@ -1,0 +1,307 @@
+/*for all pages*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: gray;
+    display: flex;
+    max-height: 70px;
+    width:100vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}  
+body{
+    background-color:  #485156 ;
+}
+li, a, button 
+{
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+   max-height: 40px; 
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav-list li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-list li a:hover{
+    color: dodgerblue;
+}
+.hamburgerMenu{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+} 
+
+/* home.html */
+.wrapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+.homeLogo{
+max-height: 55vh;
+}
+.text
+{
+    display: flex;
+    height: 45vh;
+    width: 14vw;
+    justify-content: center;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 7px 7px#0ff;
+    border-radius: 2rem;
+    flex-direction: column;
+    font-size: 7vh;
+    text-align: center;
+    color: #0ff;
+   text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+    perspective: 600px;
+}
+
+  /* rooms.html */
+.wrapper__bookning
+{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    " navigation navigation navigation navigation navigation navigation "
+    " bookning bookning bookning bookning bookning bookning ";
+}
+
+.bookning
+{
+    grid-area: bookning;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 2fr));
+    grid-auto-rows: auto;
+    background-color: darkgray;
+}
+
+.booking__room .booking__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 16rem;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    text-decoration:none;
+}
+
+button
+{
+    background-color: white;
+    width: 15rem;
+    height: 2rem;
+    border: 3px solid white;
+    border-radius: 20px;
+
+}
+/*images for  rooms.html*/
+.booking__one{
+    background-image: url("picture/photos/01-day.jpg");
+}
+
+.booking__one:hover{
+    background-image: url("picture/photos/01-night.jpg");
+}
+
+.booking__two{
+    background-image: url("picture/photos/02-day.jpg");
+}
+
+.booking__two:hover{
+    background-image: url("picture/photos/02-night.jpg");
+}
+
+.booking__thre{
+    background-image: url("picture/photos/03-day.jpg");
+}
+
+.booking__thre:hover{
+    background-image: url("picture/photos/03-night.jpg");
+}
+
+.booking__four{
+    background-image: url("picture/photos/04-day.jpg");
+}
+
+.booking__four:hover{
+    background-image: url("picture/photos/04-night.jpg");
+}
+
+.booking__five{
+    background-image: url("picture/photos/05-day.jpg");
+}
+
+.booking__five:hover{
+    background-image: url("picture/photos/05-night.jpg");
+}
+
+.booking__six{
+    background-image: url("picture/photos/06-day.jpg");
+}
+
+.booking__six:hover{
+    background-image: url("picture/photos/06-night.jpg");
+}
+
+.booking__seven{
+    background-image: url("picture/photos/07-day.jpg");
+}
+
+.booking__seven:hover{
+    background-image: url("picture/photos/07-night.jpg");
+}
+
+.booking__eight{
+    background-image: url("picture/photos/08-day.jpg");
+}
+
+.booking__eight:hover{
+    background-image: url("picture/photos/08-night.jpg");
+}
+
+.booking__nine{
+    background-image: url("picture/photos/09-day.jpg");
+}
+
+.booking__nine:hover{
+    background-image: url("picture/photos/09-night.jpg");
+}
+
+/* about.html*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(picture/bkg.jpeg); 
+}
+
+.center-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+/* picture i about.html */
+.image-container {
+    display: flex;
+}
+.image-container img {
+    width: 50%; 
+    max-width: 100%; 
+}
+.text-box {
+    text-align: center;
+    padding: 20px;
+}
+
+/*för about.html  */
+@media (max-width: 600px) {
+    .center-box {
+        width: 80%;
+    }
+    .image-container {
+        flex-direction: column; 
+        align-items: center;
+        width: 125%;
+    }
+}
+
+.bookning--about--btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+.bookning--about--btn:hover {
+    background-color: royalblue;
+}
+
+/*responsiv*/
+@media(max-width:500px) {
+
+    .hamburgerMenu {
+        display: block;
+    }
+
+    .hamburgerMenu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburgerMenu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburgerMenu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-list{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: lightgray;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ;
+    }
+    .nav-list_item{
+        margin:16px 0;
+    }
+
+    .nav-list.active{
+        left:0;
+    }
+    .homeLogo {
+        height: 45vh;
+        width: 50vw;
+    }
+    
+  }
